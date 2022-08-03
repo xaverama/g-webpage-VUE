@@ -1,21 +1,21 @@
 <template>
   <form @submit.prevent="registerMe">
     <h2>Register Form</h2>
-    <div class="email">
+    <div class="input-container">
       <label>Firstname</label>
-      <input type="text" v-model="firstName" autofocus required>
+      <input type="text" v-model="firstName" autofocus >
     </div>
-    <div class="email">
+    <div class="input-container">
       <label>Lastname</label>
-      <input type="text" v-model="lastName"  required>
+      <input type="text" v-model="lastName"  >
     </div>
-    <div class="email">
+    <div class="input-container">
       <label>Email</label>
-      <input type="email" v-model="email"  required>
+      <input type="email" v-model="email"  >
     </div>
     <div class="passwordInput">
       <label>Password</label>
-      <input type="password" v-model="password" required>
+      <input type="password" v-model="password" >
     </div>
     <SimpleButton type="submit"></SimpleButton>
   </form>
@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 
-import {ref} from "vue";
+import { ref} from "vue";
 import SimpleButton from "./SimpleButton.vue";
 
 const firstName = ref("");
@@ -31,9 +31,13 @@ const lastName = ref("");
 const email = ref("");
 const password = ref("");
 
+
 function registerMe() {
+  console.log("this is my firstname, ", firstName.value)
+  console.log("this is my lastName, ", lastName.value)
   console.log("this is my email, ", email.value)
   console.log("this is my password, ", password.value)
+
 }
 
 </script>
@@ -67,7 +71,7 @@ input {
   background: lightgray;
 }
 
-.email {
+.input-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
