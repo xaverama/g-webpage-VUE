@@ -53,6 +53,7 @@ header {
 
 #dynamic{
   padding: 3rem 0;
+
 }
 
 #form{
@@ -67,6 +68,8 @@ header {
 .card{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
 
 }
 footer {
