@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "height": 300,
+      "width": 200,
+      "color": "blue"
+    },
+    {
+      "height": 300,
+      "width": 200,
+      "color": "green"
+    },
+    {
+      "height": 300,
+      "width": 200,
+      "color": "red"
+    },
+    {
+      "height": 300,
+      "width": 200,
+      "color": "yellow"
+    },{
+      "height": 300,
+      "width": 200,
+      "color": "orange"
+    }
+  ]
+}
